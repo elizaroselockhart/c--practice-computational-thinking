@@ -100,7 +100,7 @@ namespace ComputationalThinkingExercises
             }
             else Console.Write("Those numbers are not the same.\n");
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -124,7 +124,7 @@ namespace ComputationalThinkingExercises
                 Console.Write("That number is odd, but it's an honorary even.\n");
             else Console.Write("That number is odd.\n");
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -152,7 +152,7 @@ namespace ComputationalThinkingExercises
             { 
                 Console.Write("That is definitely a consonant.\n");
             } else Console.Write("Error! You didn't follow directions!\n ");
-                Console.Write("Press enter to return to the Main Menu");
+                Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -186,7 +186,7 @@ namespace ComputationalThinkingExercises
             }
             else Console.Write("Error! You didn't follow directions! What the hell, man.");
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -214,7 +214,7 @@ namespace ComputationalThinkingExercises
             else Console.WriteLine("Error! Follow the freaking directions!");
 
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -256,7 +256,7 @@ namespace ComputationalThinkingExercises
             Console.Write("It is Customer Appreciation Week at the CyberCafe(tm)! Keep pressing buttons to see how much you SAVED by being a loyal CyberCafe(tm) CyberCustomer(tm)!\n");
             Console.Write("What's your name, loyal CyberCafe(tm) CyberCustomer(tm)? \n->");
             string name = Console.ReadLine();
-            Console.Write("Welcome, " + name + ", loyal CyberCafe(tm) CyberCustomer(tm)!!\n");
+            Console.Write("Welcome, " + name + ", loyal CyberCafe(tm) CyberCustomer(tm)!\n");
             Console.Write("How many diners are with you today, " + name + "?\n->");
             numofdiners = Convert.ToInt32(Console.ReadLine());
             Console.Write("How did you EVENLY divide the bill, " + name + "?\n");
@@ -336,9 +336,9 @@ namespace ComputationalThinkingExercises
                 }
                 Console.ReadKey();
 
-                //Do not press 1 to continue. If you press 1 to continue the program will crash, which is the intended effect.
+                //Do not press Q to continue. If you press Q to continue, the program will crash, which is the intended effect.
                 //If you want to continue without crashing the program, type any real number that includes a decimal, like 1.0. This should take you back to the final screen.
-                Console.Write("Press 1 to continue.");
+                Console.Write("Press Q to continue.");
                 double PressThisToCrashProgram = Convert.ToDouble(Console.ReadLine());
 
 
@@ -346,7 +346,7 @@ namespace ComputationalThinkingExercises
             else Console.WriteLine("Uh oh! Whoopsy daisy! Oh geez! Oh god! Something went wrong!");
             
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -376,7 +376,7 @@ namespace ComputationalThinkingExercises
             for (int i = 0; i <= 3; i++)
             {
                 Console.Write(". ");
-                System.Threading.Thread.Sleep(100);
+                System.Threading.Thread.Sleep(1000);
             }
 
             Console.WriteLine("We judge you BY your age, not FOR your age. My mistake.");
@@ -423,7 +423,7 @@ namespace ComputationalThinkingExercises
             }
 
 
-        Console.Write("Press enter to return to the Main Menu");
+        Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
 
 
@@ -459,7 +459,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "one":
                         Console.WriteLine("Your number is 1.");
@@ -467,7 +467,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "two":
                         Console.WriteLine("Your number is 2.");
@@ -475,7 +475,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "three":
                         Console.WriteLine("Your number is 3.");
@@ -483,7 +483,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "four":
                         Console.WriteLine("Your number is 4.");
@@ -491,7 +491,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "five":
                         Console.WriteLine("Your number is 5.");
@@ -499,7 +499,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "six":
                         Console.WriteLine("Your number is 6.");
@@ -507,7 +507,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "seven":
                         Console.WriteLine("Your number is 7.");
@@ -515,7 +515,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "eight":
                         Console.WriteLine("Your number is 8.");
@@ -523,7 +523,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "nine":
                         Console.WriteLine("Your number is 9.");
@@ -531,7 +531,7 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                     case "ten":
                         Console.WriteLine("Your number is 10.");
@@ -539,21 +539,25 @@ namespace ComputationalThinkingExercises
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write("blood sacrifice");
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.Write(" to convert a number from a word to a digit. There will be consequences for this...\n");
+                        Console.Write(" to convert a number from a word to a digit. \nThere will be consequences for this...\n");
                         break;
                 }
-            } else Console.Write("Error! You did not follow directions.\n ");
-            Console.Write("It's okay, it's only a little ");
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.Write("blood sacrifice");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write(". I'm sure the victim barely felt it, and will forgive you for your mistake.\n");
+            }
+            else
+            {
+                Console.Write("Error! You did not follow directions.\n");
+                Console.Write("It's okay, it's only a little ");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write("blood sacrifice");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(". \nI'm sure the victim barely felt it, and will forgive you for your mistake.\n");
+            }
 
             Console.Write("Press ");
                 Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Write("enter");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.Write(" to return to the Main Menu");
+            Console.Write(" to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -571,7 +575,8 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            Console.Write("Press enter to return to the Main Menu");
+
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -587,7 +592,7 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
@@ -601,7 +606,7 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            Console.Write("Press enter to return to the Main Menu");
+            Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
         }
 
