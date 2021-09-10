@@ -167,22 +167,22 @@ namespace ComputationalThinkingExercises
             // Enter your solution here
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now tell you which of the two numbers is the largest.\n");
-            Console.Write("Please enter a number. \n->");
-            double num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Please enter another number. \n->");
-            double num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter an integer. \n->");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter another integer. \n->");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
             if (num1 > num2)
             {
-                Console.Write(num1 + " is greater than " + num2);
+                Console.Write(num1 + " is greater than " + num2 + ".\n");
             }
             else if (num1 < num2)
             {
-                Console.Write(num2 + " is greater than " + num1);
+                Console.Write(num2 + " is greater than " + num1 + ".\n");
             }
             else if (num1 == num2)
             {
-                Console.Write(num1 + " is equal to " + num2);
+                Console.Write(num1 + " is equal to " + num2 + ".\n");
             }
             else Console.Write("Error! You didn't follow directions! What the hell, man.");
 
@@ -240,18 +240,16 @@ namespace ComputationalThinkingExercises
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
             //Plays a soothing C scale to welcome you to the CyberCafe(tm).
-                        Console.Beep(262, 175);
-                        Console.Beep(294, 175);
-                        Console.Beep(330, 175);
-                        Console.Beep(349, 175);
-                        Console.Beep(392, 500);
+                        Console.Beep(262, 100);
+                        Console.Beep(294, 100);
+                        Console.Beep(330, 100);
+                        Console.Beep(349, 100);
+                        Console.Beep(392, 250);
 
             Console.Write("Welcome back to the CyberCafe(tm)!\n"); 
             int numofdiners = 4;
             double indivbill = 13;
-            indivbill = Math.Round(indivbill, 2);
             double totalbill = numofdiners * indivbill;
-            totalbill = Math.Round(totalbill, 2);
             
             Console.Write("It is Customer Appreciation Week at the CyberCafe(tm)! Keep pressing buttons to see how much you SAVED by being a loyal CyberCafe(tm) CyberCustomer(tm)!\n");
             Console.Write("What's your name, loyal CyberCafe(tm) CyberCustomer(tm)? \n->");
@@ -267,15 +265,11 @@ namespace ComputationalThinkingExercises
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("->");
             indivbill = Convert.ToDouble(Console.ReadLine());
-            indivbill = Math.Round(indivbill, 2);
             
             totalbill = numofdiners * indivbill;
-            totalbill = Math.Round(totalbill, 2);
 
             double tendiscount = totalbill * 0.10;
-            tendiscount = Math.Round(tendiscount, 2);
             double fivediscount = totalbill * 0.05;
-            fivediscount = Math.Round(fivediscount, 2);
 
             if (totalbill >= 50.00)
             {
@@ -284,11 +278,8 @@ namespace ComputationalThinkingExercises
                 Console.Write("You saved $" + String.Format("{0:0.00}", tendiscount) + ".\n");
 
                 double newbill = totalbill - tendiscount;
-                newbill = Math.Round(newbill, 2);
 
                 double newindivbill = newbill / numofdiners;
-                newindivbill = Math.Round(newindivbill, 2);
-
 
                 Console.Write("Your new bill is $" + String.Format("{0:0.00}", newbill) + ".\n");
                 Console.Write("Each diner will pay $" + String.Format("{0:0.00}", newindivbill) + ".\n");
@@ -302,11 +293,8 @@ namespace ComputationalThinkingExercises
                 Console.Write("You saved $" + String.Format("{0:0.00}", fivediscount) + ".\n");
 
                 double newbill = totalbill - fivediscount;
-                newbill = Math.Round(newbill, 2);
 
                 double newindivbill = newbill / numofdiners;
-                newindivbill = Math.Round(newindivbill, 2);
-
 
                 Console.Write("Your new bill is $" + String.Format("{0:0.00}", newbill) + ".\n");
                 Console.Write("Each diner will pay $" + String.Format("{0:0.00}", newindivbill) + ".\n");
@@ -574,6 +562,31 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WHICH NAME IS LONGER?\n");
 
             // Enter your solution here
+            Console.Write("Welcome to CyberLetters, where we tell you all about your letters in cyberspace!\n");
+            Console.Write("CyberLetters will now tell you about the length of your name!\n");
+            Console.Write("Enter your first name.\n->");
+            string firstname = Console.ReadLine();
+            Console.Write("Enter your last name.\n->");
+            string lastname = Console.ReadLine();
+            int fnlength = firstname.Length;
+            int lnlength = lastname.Length;
+
+            if (fnlength > lnlength)
+            {
+                Console.WriteLine("Your name is " + firstname + " " + lastname + ".");
+                Console.WriteLine("Your first name is longer than your last name.");
+            }
+            else if (fnlength < lnlength)
+            {
+                Console.WriteLine("Your name is " + firstname + " " + lastname + ".");
+                Console.WriteLine("Your last name is longer than your first name.");
+            }
+            else if (fnlength == lnlength)
+            {
+                Console.WriteLine("Your name is " + firstname + " " + lastname + ".");
+                Console.WriteLine("Your first and last name are the same length.");
+            }
+            else Console.WriteLine("Somehow, something went wrong.");
 
 
             Console.Write("Press enter to return to the Main Menu.");
@@ -591,6 +604,18 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE NAMES THE SAME?\n");
 
             // Enter your solution here
+            Console.Write("Welcome to CyberLetters, where we tell you all about your letters in cyberspace!\n");
+            Console.Write("CyberLetters will now tell you about your name!\n");
+            Console.Write("Enter the first name.\n->");
+            string name1 = Console.ReadLine().ToLower();
+            Console.Write("Enter the second name.\n->");
+            string name2 = Console.ReadLine().ToLower();
+
+            if (name1 == name2)
+            { 
+                Console.WriteLine("Those names are the same!");
+            }
+            else Console.WriteLine("Those names are different.");
 
             Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
@@ -605,6 +630,14 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
+            Console.Write("Welcome to CyberCatalogue, where we tell you all about YOU in cyberspace!\n");
+            Console.Write("CyberCatalogue will now repeat your words like a parrot.\n");
+            Console.Write("Enter your first name.\n->");
+            string name = Console.ReadLine();
+            Console.Write("Enter your birth place. \n->");
+            string birthplace = Console.ReadLine();
+
+            Console.WriteLine("Greetings, " + name + "! You were born in " + birthplace + ".");
 
             Console.Write("Press enter to return to the Main Menu.");
             Console.ReadLine();
