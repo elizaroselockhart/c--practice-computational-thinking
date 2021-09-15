@@ -9,6 +9,7 @@ namespace ComputationalThinkingExercises
             bool keepThinking = true;
             while (keepThinking)
             {
+                // NOTE: fun colors
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Clear();
@@ -87,6 +88,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             //Enter your solution here.
+            // NOTE: good solution
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now tell you whether your numbers are the same.\n");
             Console.Write("Please enter a number. \n->");
@@ -113,7 +115,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
-
+            // NOTE: good solution, use curly braces as a novice developer
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now tell you whether your number is even or odd.\n");
             Console.Write("Enter a number.\n->");
@@ -137,6 +139,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("VOWEL OR CONSONANT?\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberLetters, where we tell you all about your letters in cyberspace!\n");
             Console.Write("CyberLetters will now tell you whether your letters are a vowel or a consonant.\n");
             Console.Write("Enter a letter.\n->");
@@ -165,6 +168,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now tell you which of the two numbers is the largest.\n");
             Console.Write("Please enter an integer. \n->");
@@ -198,6 +202,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("DIVISIBLE BY 3\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now tell you whether your number is divisible by 3.\n");
             Console.Write("Please enter a number. \n->");
@@ -235,7 +240,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
-
+            // NOTE: good solution, cute messages
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
@@ -359,6 +364,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
+            // NOTE: good solution, cute responses
             Console.WriteLine("Welcome to CyberSort, where we judge you for your age and put you into several categories!");
 
             for (int i = 0; i <= 3; i++)
@@ -428,6 +434,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WORDS TO DIGITS\n");
 
             // Enter your solution here
+            // NOTE: good solution and clever animations
             Console.Write("Welcome to CyberNumbers, where we tell you all about your numbers in cyberspace!\n");
             Console.Write("CyberNumbers will now use ");
             Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -562,6 +569,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WHICH NAME IS LONGER?\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberLetters, where we tell you all about your letters in cyberspace!\n");
             Console.Write("CyberLetters will now tell you about the length of your name!\n");
             Console.Write("Enter your first name.\n->");
@@ -604,6 +612,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE NAMES THE SAME?\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberLetters, where we tell you all about your letters in cyberspace!\n");
             Console.Write("CyberLetters will now tell you about your name!\n");
             Console.Write("Enter the first name.\n->");
@@ -630,6 +639,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
+            // NOTE: good solution
             Console.Write("Welcome to CyberCatalogue, where we tell you all about YOU in cyberspace!\n");
             Console.Write("CyberCatalogue will now repeat your words like a parrot.\n");
             Console.Write("Enter your first name.\n->");
